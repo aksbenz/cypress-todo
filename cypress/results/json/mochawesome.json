@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-07-01T06:31:54.145Z",
-    "end": "2020-07-01T06:32:06.637Z",
-    "duration": 12492,
+    "start": "2020-07-01T11:15:04.977Z",
+    "end": "2020-07-01T11:15:16.999Z",
+    "duration": 12022,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f32139ae-f4bf-4fa6-93b6-d2a2578e7ac6",
+      "uuid": "cb5f1289-3ac1-4658-be37-3525d3dfe003",
       "title": "",
       "fullFile": "cypress\\integration\\todo_spec.ts",
       "file": "cypress\\integration\\todo_spec.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "808fd64f-5d13-489c-a315-f8cd5f03f541",
+          "uuid": "68989b82-ef47-4292-b9d4-a8971039fe78",
           "title": "Todo",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Adds 1 item",
               "fullTitle": "Todo Adds 1 item",
               "timedOut": null,
-              "duration": 6319,
+              "duration": 5020,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": "\"videos/todo_spec.ts.mp4\"",
               "code": "cy.visit('http://todomvc.com/examples/vue/')\n  .get('input.new-todo')\n  .type('First Todo{enter}')\n  .get('ul.todo-list li')\n  .should('have.length',1)\n  .should(el => {\n    expect(el.text().trim()).to.eq('First Todo');\n  })\n  .get('footer.footer span.todo-count')\n  .should(el => {\n    expect(el.text().trim()).to.eq('1 item left');\n  });",
               "err": {},
-              "uuid": "d066bae7-8f02-4d13-85de-d4da52ef6ed9",
-              "parentUUID": "808fd64f-5d13-489c-a315-f8cd5f03f541",
+              "uuid": "8f20ea19-00e5-446f-bc30-c145e410d6cb",
+              "parentUUID": "68989b82-ef47-4292-b9d4-a8971039fe78",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Adds 2 items",
               "fullTitle": "Todo Adds 2 items",
               "timedOut": null,
-              "duration": 1893,
+              "duration": 1256,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": "\"videos/todo_spec.ts.mp4\"",
               "code": "cy.visit('http://todomvc.com/examples/vue/')\n  .get('input.new-todo')\n  .type('First Todo{enter}')\n  .get('ul.todo-list li')\n  .should('have.length',1)\n  .should(el => {\n    expect(el.text().trim()).to.eq('First Todo');\n  })\n  .get('footer.footer span.todo-count')\n  .should(el => {\n    expect(el.text().trim()).to.eq('1 item left');\n  })\n  .get('input.new-todo')\n  .type('Second Todo{enter}')\n  .get('ul.todo-list li')\n  .should('have.length',2)\n  .get('ul.todo-list li:nth-child(1)')\n  .should(el => {\n    expect(el.text().trim()).to.eq('First Todo');\n  })\n  .get('ul.todo-list li:nth-child(2)')\n  .should(el => {\n    expect(el.text().trim()).to.eq('Second Todo');\n  });",
               "err": {},
-              "uuid": "6feded78-d87a-49e7-9452-5a1ce3f08c04",
-              "parentUUID": "808fd64f-5d13-489c-a315-f8cd5f03f541",
+              "uuid": "dd64eaa8-d9e6-4357-8594-7957fee8980b",
+              "parentUUID": "68989b82-ef47-4292-b9d4-a8971039fe78",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d066bae7-8f02-4d13-85de-d4da52ef6ed9",
-            "6feded78-d87a-49e7-9452-5a1ce3f08c04"
+            "8f20ea19-00e5-446f-bc30-c145e410d6cb",
+            "dd64eaa8-d9e6-4357-8594-7957fee8980b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8212,
+          "duration": 6276,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
