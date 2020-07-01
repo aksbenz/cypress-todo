@@ -1,0 +1,28 @@
+{
+  "name": "cypress-todo",
+  "version": "1.0.0",
+  "description": "Cypress Sample Todo Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksbenz/cypress-todo.git"
+  },
+  "keywords": [
+    "cypress",
+    "test",
+    "automation",
+    "todo"
+  ],
+  "author": "aksbenz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksbenz/cypress-todo/issues"
+  },
+  "homepage": "https://github.com/aksbenz/cypress-todo#readme",
+  "devDependencies": {
+    "cypress": "^4.9.0"
+  }
+}
