@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-01T06:31:54.145Z",
+    "end": "2020-07-01T06:32:06.637Z",
+    "duration": 12492,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f32139ae-f4bf-4fa6-93b6-d2a2578e7ac6",
+      "title": "",
+      "fullFile": "cypress\\integration\\todo_spec.ts",
+      "file": "cypress\\integration\\todo_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "808fd64f-5d13-489c-a315-f8cd5f03f541",
+          "title": "Todo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adds 1 item",
+              "fullTitle": "Todo Adds 1 item",
+              "timedOut": null,
+              "duration": 6319,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/todo_spec.ts.mp4\"",
+              "code": "cy.visit('http://todomvc.com/examples/vue/')\n  .get('input.new-todo')\n  .type('First Todo{enter}')\n  .get('ul.todo-list li')\n  .should('have.length',1)\n  .should(el => {\n    expect(el.text().trim()).to.eq('First Todo');\n  })\n  .get('footer.footer span.todo-count')\n  .should(el => {\n    expect(el.text().trim()).to.eq('1 item left');\n  });",
+              "err": {},
+              "uuid": "d066bae7-8f02-4d13-85de-d4da52ef6ed9",
+              "parentUUID": "808fd64f-5d13-489c-a315-f8cd5f03f541",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adds 2 items",
+              "fullTitle": "Todo Adds 2 items",
+              "timedOut": null,
+              "duration": 1893,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/todo_spec.ts.mp4\"",
+              "code": "cy.visit('http://todomvc.com/examples/vue/')\n  .get('input.new-todo')\n  .type('First Todo{enter}')\n  .get('ul.todo-list li')\n  .should('have.length',1)\n  .should(el => {\n    expect(el.text().trim()).to.eq('First Todo');\n  })\n  .get('footer.footer span.todo-count')\n  .should(el => {\n    expect(el.text().trim()).to.eq('1 item left');\n  })\n  .get('input.new-todo')\n  .type('Second Todo{enter}')\n  .get('ul.todo-list li')\n  .should('have.length',2)\n  .get('ul.todo-list li:nth-child(1)')\n  .should(el => {\n    expect(el.text().trim()).to.eq('First Todo');\n  })\n  .get('ul.todo-list li:nth-child(2)')\n  .should(el => {\n    expect(el.text().trim()).to.eq('Second Todo');\n  });",
+              "err": {},
+              "uuid": "6feded78-d87a-49e7-9452-5a1ce3f08c04",
+              "parentUUID": "808fd64f-5d13-489c-a315-f8cd5f03f541",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d066bae7-8f02-4d13-85de-d4da52ef6ed9",
+            "6feded78-d87a-49e7-9452-5a1ce3f08c04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8212,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
